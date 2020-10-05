@@ -1,0 +1,34 @@
+﻿<Window x:Class="Medidea.UpdatePatient"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Medidea"
+        mc:Ignorable="d"
+        Title="Обновить" Height="350" Width="300" WindowStartupLocation="CenterScreen">
+    <Window.Background>
+        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+            <GradientStop Color="#FFC7E676" Offset="0"/>
+            <GradientStop Color="#FFC0F531" Offset="1"/>
+        </LinearGradientBrush>
+    </Window.Background>
+    <Grid Margin="0,0,0,2" HorizontalAlignment="Left" Width="290">
+        <TextBlock HorizontalAlignment="Left" Margin="115,10,0,0" TextWrapping="Wrap" Text="Пациент" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="16" FontWeight="Bold"/>
+        <TextBlock HorizontalAlignment="Left" Margin="20,60,0,0" TextWrapping="Wrap" Text="ФИО" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="14"/>
+        <TextBlock HorizontalAlignment="Left" Margin="20,100,0,0" TextWrapping="Wrap" Text="Пол" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="14"/>
+        <Button Content="Сохранить" HorizontalAlignment="Left" Margin="104,281,0,0" VerticalAlignment="Top" Width="95" Click="Button_Click" Height="26" Background="#FF71ECD5"/>
+        <TextBox x:Name="FIOTextBox" HorizontalAlignment="Left" Height="23" Margin="140,60,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="144"/>
+        <TextBlock HorizontalAlignment="Left" Margin="20,140,0,0" TextWrapping="Wrap" Text="Дата рождения" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="14"/>
+        <TextBlock HorizontalAlignment="Left" Margin="20,180,0,0" TextWrapping="Wrap" Text="Адрес проживания" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="14"/>
+        <TextBlock HorizontalAlignment="Left" Margin="20,220,0,0" TextWrapping="Wrap" Text="Телефон" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="14"/>
+        <TextBox x:Name="AdressTextBox" HorizontalAlignment="Left" Height="23" Margin="140,180,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="144"/>
+        <TextBox x:Name="PhoneTextBox" HorizontalAlignment="Left" Height="23" Margin="140,220,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="144"/>
+        <DatePicker x:Name="DataDatePicker" HorizontalAlignment="Left" Margin="140,140,0,0" VerticalAlignment="Top" Width="144"/>
+        <ComboBox Name="PolComboBox" HorizontalAlignment="Left" Margin="140,100,0,0" VerticalAlignment="Top" Width="144">
+            <ComboBox.Items>
+                <ComboBoxItem>Мужчина</ComboBoxItem>
+                <ComboBoxItem>Женщина</ComboBoxItem>
+            </ComboBox.Items>
+        </ComboBox>
+    </Grid>
+</Window>

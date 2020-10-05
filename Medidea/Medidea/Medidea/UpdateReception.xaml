@@ -1,0 +1,29 @@
+﻿<Window x:Class="Medidea.UpdateReception"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Medidea"
+        mc:Ignorable="d"
+        Title="Изменить данные о приёме" Height="300" Width="500" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FFCBEC3A" Offset="0"/>
+                <GradientStop Color="#FFD7F357" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <TextBlock HorizontalAlignment="Left" Margin="30,32,0,0" TextWrapping="Wrap" Text="Дата приёма" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="14"/>
+        <TextBlock HorizontalAlignment="Left" Margin="30,75,0,0" TextWrapping="Wrap" Text="Тип приёма" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="14"/>
+        <TextBlock HorizontalAlignment="Left" Margin="30,120,0,0" TextWrapping="Wrap" Text="Диагноз" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="14"/>
+        <DatePicker x:Name="ReceptionDatePicker" HorizontalAlignment="Left" Margin="123,28,0,0" VerticalAlignment="Top" Width="298"/>
+        <TextBox x:Name="DiagnosisTextBox" HorizontalAlignment="Left" Height="112" Margin="123,113,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="298"/>
+        <Button Content="Сохранить" HorizontalAlignment="Left" Margin="216,240,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click" Background="#FF62F7DC"/>
+        <ComboBox Name="TypeComboBox" HorizontalAlignment="Left" Margin="123,69,0,0" VerticalAlignment="Top" Width="298">
+            <ComboBox.Items>
+                <ComboBoxItem>Первичный приём</ComboBoxItem>
+                <ComboBoxItem>Вторичный приём</ComboBoxItem>
+            </ComboBox.Items>
+        </ComboBox>
+    </Grid>
+</Window>

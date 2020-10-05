@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Хранилище PatientsModelContainer" CdmEntityContainer="PatientsEntities">
+    <EntitySetMapping Name="Patient">
+      <EntityTypeMapping TypeName="PatientsModel.Patient">
+        <MappingFragment StoreEntitySet="Patient">
+          <ScalarProperty Name="IdPatient" ColumnName="IdPatient" />
+          <ScalarProperty Name="FIO" ColumnName="FIO" />
+          <ScalarProperty Name="Pol" ColumnName="Pol" />
+          <ScalarProperty Name="DateOfBirth" ColumnName="DateOfBirth" />
+          <ScalarProperty Name="Adress" ColumnName="Adress" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Receptions">
+      <EntityTypeMapping TypeName="PatientsModel.Receptions">
+        <MappingFragment StoreEntitySet="Receptions">
+          <ScalarProperty Name="IdReception" ColumnName="IdReception" />
+          <ScalarProperty Name="DateReception" ColumnName="DateReception" />
+          <ScalarProperty Name="TypeReception" ColumnName="TypeReception" />
+          <ScalarProperty Name="Diagnosis" ColumnName="Diagnosis" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
